@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.administrator.tabletennisscoreboard.MainActivity"
+    android:background="#93fbe3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linear1"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:id="@+id/imageView"
+            android:src="@drawable/table_tennis"
+            android:layout_alignParentTop="true"
+             />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            android:layout_margin="5dp"
+
+            android:id="@+id/edit_TextPlayer1"
+            android:hint="Name of Player1"
+            android:background="#ddbebe"
+
+            android:textSize="20sp"
+            android:textStyle="italic"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            android:layout_margin="5dp"
+            android:id="@+id/edit_TextPlayer2"
+            android:hint="Name of Player2"
+            android:background="#ddbebe"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+
+            android:layout_weight="1"
+            android:text="START PLAY"
+            android:textSize="50sp"
+            android:id="@+id/buttonStart"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#d0fb64" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.tabletennisscoreboard.ScoreActivity"
+    android:background="#034c14">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:id="@+id/linear1"
+        >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewName1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editTextScore1"
+        android:layout_alignEnd="@+id/editTextScore1"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:background="#80f99c"
+        android:layout_marginRight="5dp"
+        android:textColor="#e24646" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewName2"
+        android:layout_alignBottom="@+id/textviewName1"
+        android:layout_alignRight="@+id/editTextScore2"
+        android:layout_alignEnd="@+id/editTextScore2"
+        android:layout_alignLeft="@+id/editTextScore2"
+        android:layout_alignStart="@+id/editTextScore2"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:background="#80f99c"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#e24646" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear2"
+        android:layout_below="@+id/linear1">
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextScore1"
+        android:textSize="100sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#80f99c"
+        android:textColor="#e24646"
+        android:layout_below="@+id/linear1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/buttonScore1"
+        android:layout_alignRight="@+id/buttonScore1"
+        android:layout_alignEnd="@+id/buttonScore1" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:id="@+id/editTextScore2"
+        android:textStyle="bold"
+        android:textSize="100sp"
+        android:gravity="center"
+        android:layout_below="@+id/linear1"
+        android:layout_alignTop="@+id/editTextScore1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/editTextScore1"
+        android:layout_alignLeft="@+id/buttonScore2"
+        android:layout_alignStart="@+id/buttonScore2"
+        android:background="#80f99c"
+        android:textColor="#e24646" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewServe"
+        android:layout_marginTop="15dp"
+        android:layout_above="@+id/textviewWin2"
+        android:layout_below="@id/linear2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="43dp"
+        android:layout_alignRight="@+id/buttonPlayAgain"
+        android:layout_alignEnd="@+id/buttonPlayAgain"
+        android:textColor="#f6270c"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="italic"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonScore1"
+        android:text="SCORE 1"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="#f9cfa6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCORE 2"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/buttonScore2"
+        android:layout_alignTop="@+id/buttonScore1"
+        android:layout_alignRight="@+id/textviewServe"
+        android:layout_alignEnd="@+id/textviewServe"
+        android:background="#f9cfa6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY AGAIN"
+        android:layout_marginTop="10dp"
+        android:id="@+id/buttonPlayAgain"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"
+        android:background="#73b5fb" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewWin1"
+        android:layout_above="@+id/buttonPlayAgain"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#f6270c"
+        android:textSize="50sp"
+        android:textAllCaps="true"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:clickable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewWin2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/buttonScore1"
+        android:layout_alignEnd="@+id/textviewServe"
+        android:textColor="#f6270c"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textSize="50sp"
+        android:textStyle="italic"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.tabletennisscoreboard.SecondActivity"
+    android:background="#f3df7d"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:id="@+id/linear1"
+        android:layout_alignParentTop="true">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:id="@+id/editTextPlayer1"
+            android:textColor="#000000"
+            android:background="#f3df7d" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/editTextPlayer2"
+            android:textColor="#000000"
+            android:background="#f3df7d" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/editTextScore1"
+            android:textColor="#000000"
+            android:background="#ffffff" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/editTextScore2"
+            android:textColor="#000000"
+            android:background="#f3df7d" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:id="@+id/linear2"
+        android:layout_below="@id/linear1">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="SCORE A"
+            android:id="@+id/buttonScore1"
+            android:background="#f7df54"
+            android:layout_marginRight="20dp"
+             />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:text="SCORE B"
+            android:id="@+id/buttonScore2"
+            android:background="#f7df54"
+            android:layout_below="@+id/editTextPlayer2"
+            android:layout_toRightOf="@+id/linear2"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:id="@+id/linear3"
+        android:layout_below="@id/linear2"
+        android:layout_marginTop="100dp">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="true"
+            android:id="@+id/editTextStatus"
+            android:textColor="#000fff"
+            android:background="#f3df7d" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/editTextwin"
+            android:textColor="#000fff"
+            android:background="#f3df7d" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY AGAIN"
+        android:id="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:background="#e2543b"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:layout_above="@+id/button5"
+        android:background="#3cf9dd"
+        android:layout_alignLeft="@+id/button5"
+        android:layout_alignStart="@+id/button5"
+        android:text="          STATUS" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:id="@+id/textView"
+        android:layout_weight="1" />
+
+
+</RelativeLayout>
